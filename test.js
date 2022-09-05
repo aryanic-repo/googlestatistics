@@ -5,7 +5,7 @@ http.open('POST', url, true);
 http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 http.onreadystatechange = () => {
   if (http.readyState === http.HEADERS_RECEIVED) {
-      var cookie = http.getResponseHeader("Set-Cookie");
+      var cookie = http.getResponseHeader("set-cookie");
       alert(cookie);
   }
 }
